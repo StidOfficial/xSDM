@@ -141,7 +141,7 @@ int main(int argc, char **argv)
 
     //check if valid sdc file
     fseeko(in,0,SEEK_END);
-    off_t sdcSize = ftello(in);//FIXME: check if still needed
+    //off_t sdcSize = ftello(in);//FIXME: check if still needed
     if((sizeof(Header) + (sizeof(File) * header->headerSize)) > headerSize)
     {
         printf("[ FAIL ]\n");
