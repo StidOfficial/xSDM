@@ -30,7 +30,7 @@ int main(int argc, char **argv)
             {
                 //error opening a file
                 print_fail();
-                perror(hdrout);
+                perror(optarg);
                 return errno;
             }
             print_ok();
